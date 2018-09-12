@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pixi-Test-Fire</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="pixi.min.js"></script>
+        <script src="pixi-particles.min.js"></script>
+        <script type="text/javascript" src="FireApp.js"></script>
+    </head>
+    <body>
+        <div id="App">
+            <ul class="menu">
+                <li><a class="menu_link" href="/cards.html">CARDS</a></li>
+                <li><a class="menu_link" href="/slots.html">SLOTS</a></li>
+                <li><a class="menu_link" href="/fire.html">FIRE</a></li>
+            </ul>
+            <div id="framerate"></div>
+        </div>
+		<canvas id="stage" width="400" height="400"></canvas>
+		<script>
+			new ParticleExample(
+                ["images/new_fire_1.png","images/new_fire_2.png","images/new_fire_3.png","images/new_fire_4.png"],
+				{
+					"alpha": {
+						"start": 0.85,
+						"end": 0
+					},
+					"scale": {
+						"start": 0.55,
+						"end": 0.85
+					},
+					"color": {
+						"start": "fbe41e",
+						"end": "f43400"
+					},
+					"speed": {
+						"start": 500,
+						"end": 700
+					},
+					"startRotation": {
+						"min": 255,
+						"max": 285
+					},
+					"rotationSpeed": {
+						"min": 10,
+						"max": 20
+					},
+					"lifetime": {
+						"min": 0.25,
+						"max": 0.75
+					},
+					"blendMode": "COLOR_BURN",
+					"frequency": 0.001,
+					"emitterLifetime": 0,
+					"maxParticles": 1000,
+					"pos": {
+						"x": 0,
+						"y": 0
+					},
+					"addAtBack": false,
+					"spawnType": "circle",
+					"spawnCircle": {
+						"x": 0,
+						"y": 0,
+						"r": 50
+					}
+				});
+		</script>
+    </body>
+</html>

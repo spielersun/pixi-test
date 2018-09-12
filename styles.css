@@ -4,6 +4,72 @@ body{
     justify-content: center;
 }
 
-#App>*{
-    border: 1px dashed black;
+.menu{ 
+    width: 400px;
+    height: 50px;
+    padding: 5px;
+    position: fixed;
+    top:20px;
+    left:20px;
+    margin:0px;
+}
+.menu li{
+    width: 120px;
+    margin: 0px 5px;
+    display: block;
+    float:left;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu li a{
+    width: 100px;
+    padding: 10px;
+    display: block;
+    background-color: black;
+    color: beige;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 26px;
+    transition: 0.3s;
+}
+.menu li a:hover{
+    background-color: orange;
+    color: beige;
+}
+
+
+#framerate {
+    width: 100px;
+    padding: 10px;
+    display: block;
+    background-color: black;
+    color: beige;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 26px;
+    transition: 0.3s;
+    position: fixed;
+    top:20px;
+    right:20px;
+    text-align: center;
+}
+
+#particleCount {
+    font-size:75%;
+    padding:4px;
+    top: 20px;
+    position:absolute;
+}
+
+#instructions {
+    color:#fff;
+    text-align:center;
+    width:100%;
+    position: absolute;
+    padding:4px 0;
+}
+
+canvas {
+    display:block;
 }

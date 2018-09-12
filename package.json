@@ -2,11 +2,15 @@
   "name": "pixi-test",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "pixi-particles": "^3.1.0",
+    "pixi.js": "^4.8.2"
+  }
 }
